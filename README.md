@@ -33,6 +33,7 @@ Now you're up and running!
 ```bash
     gulp (alias for `gulp-build`)
     gulp watch
+    gulp mockapi
 ```
 
 

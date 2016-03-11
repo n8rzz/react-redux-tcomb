@@ -1,6 +1,7 @@
 import request from 'axios';
+import { ENDPOINTS } from '../endpoints';
 
-const ENDPOINT = 'http://localhost:3002/books';
+const ENDPOINT = `${ENDPOINTS}/books`;
 
 export default {
     getBookList: () => {

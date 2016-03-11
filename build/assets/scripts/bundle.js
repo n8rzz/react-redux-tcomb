@@ -27822,7 +27822,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // application entry point
 (0, _client2.default)(_reducer2.default, _routes2.default);
 
-},{"../shared/reducer":311,"../shared/routes":313,"./client":304}],306:[function(require,module,exports){
+},{"../shared/reducer":312,"../shared/routes":314,"./client":304}],306:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -27840,12 +27840,14 @@ var GET_BOOK_LIST_START = exports.GET_BOOK_LIST_START = 'GET_BOOK_LIST_START';
 var GET_BOOK_LIST_SUCCESS = exports.GET_BOOK_LIST_SUCCESS = 'GET_BOOK_LIST_SUCCESS';
 var GET_BOOK_LIST_FAIL = exports.GET_BOOK_LIST_FAIL = 'GET_BOOK_LIST_FAIL';
 
+/* istanbul ignore next */
 var getBookListStart = function getBookListStart() {
     return {
         type: GET_BOOK_LIST_START
     };
 };
 
+/* istanbul ignore next */
 var getBookListSuccess = function getBookListSuccess(payload) {
     return {
         type: GET_BOOK_LIST_SUCCESS,
@@ -27853,6 +27855,7 @@ var getBookListSuccess = function getBookListSuccess(payload) {
     };
 };
 
+/* istanbul ignore next */
 var getBookListError = function getBookListError(errors) {
     return {
         type: GET_BOOK_LIST_SUCCESS,
@@ -28085,9 +28088,11 @@ var _axios = require('axios');
 
 var _axios2 = _interopRequireDefault(_axios);
 
+var _endpoints = require('../endpoints');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var ENDPOINT = 'http://localhost:3002/books';
+var ENDPOINT = _endpoints.ENDPOINTS + '/books';
 
 exports.default = {
     getBookList: function getBookList() {
@@ -28099,7 +28104,7 @@ exports.default = {
     }
 };
 
-},{"axios":1}],310:[function(require,module,exports){
+},{"../endpoints":311,"axios":1}],310:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -28136,6 +28141,19 @@ var BookListStateType = exports.BookListStateType = _tcomb2.default.struct({
 }, 'BookListStateType');
 
 },{"../BaseTypes":308,"tcomb":256}],311:[function(require,module,exports){
+(function (global){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+global.ENDPOINT = 'http://localhost:3002';
+
+var ENDPOINTS = exports.ENDPOINTS = 'http://localhost:3002';
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+
+},{}],312:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -28156,7 +28174,7 @@ exports.default = function () {
     });
 };
 
-},{"./reducers/books/BooksReducer.js":312,"redux":251}],312:[function(require,module,exports){
+},{"./reducers/books/BooksReducer.js":313,"redux":251}],313:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -28201,7 +28219,7 @@ exports.default = (0, _reduxCreateReducer.createReducer)(INITIAL_STATE, (_create
     });
 }), _createReducer));
 
-},{"../../actions/books/BookActions":306,"../../domain/book/BookTypes":310,"redux-create-reducer":244}],313:[function(require,module,exports){
+},{"../../actions/books/BookActions":306,"../../domain/book/BookTypes":310,"redux-create-reducer":244}],314:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {

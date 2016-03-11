@@ -1,6 +1,5 @@
-/* eslint-disable */
+/* eslint-disable new-cap*/
 import ava from 'ava';
-import t from 'tcomb';
 import Fixtures from '../../../specHelper/fixtures';
 
 import {

@@ -11,5 +11,4 @@
 !/log/.keep
 /tmp
 node_modules
-build
 coverage
