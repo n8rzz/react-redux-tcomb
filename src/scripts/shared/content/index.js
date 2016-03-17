@@ -8,13 +8,13 @@ import { getBookList } from '../actions/books/BookActions';
  *
  * @class  App
  */
-class App extends React.Component {
+export class App extends React.Component {
 
     /**
-     * @method  composeWorkersList
+     * @method  composeBookList
      * @return {JSX}
      */
-    composeWorkersList() {
+    composeBookList() {
         const { books } = this.props;
 
         return books.map((book, index) => {
@@ -38,7 +38,7 @@ class App extends React.Component {
                     <h1>Books</h1>
                     <h3>... with actions and reducers</h3>
                     <ul>
-                        { this.composeWorkersList() }
+                        { this.composeBookList() }
                     </ul>
                 </div>
             );
