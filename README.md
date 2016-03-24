@@ -36,15 +36,4 @@ Now you're up and running!
     gulp mockapi
 ```
 
-## Known Issue:
-> This implementation of react-router with Hapi is not working correctly:
-
-There is an issue with the Hapi/react-router router that I'm still trying to work out.  If you try to navigate to a URL that is not the root, you will see a 404.  If you navigate to a URL via react-router's `<Link>` component, all is right with world.
-
-I'm working on it.  
-
-The root of the issue has to do with Hapi's handling of wildcard routes and then serving a static dir.  If you want to solve this on your own, feel free to open a PR!
-
----
-
 ### Happy Reacting!!
