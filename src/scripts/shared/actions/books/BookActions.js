@@ -27,10 +27,10 @@ export const getBookList = () => {
         dispatch(getBookListStart());
 
         return BookRepository.getBookList()
-        .then(response => dispatch(getBookListSuccess(response)))
-        .catch(error => {
-            dispatch(getBookListError(error));
-            throw error;
-        });
+            .then(response => dispatch(getBookListSuccess(response)))
+            .catch(error => {
+                dispatch(getBookListError(error));
+                throw error;
+            });
     };
 };
