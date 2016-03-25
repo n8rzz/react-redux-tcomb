@@ -4,6 +4,7 @@
 # Ignore bundler config.
 /.bundle
 
+npm-debug.log
 .nyc_output
 
 # Ignore all logfiles and tempfiles.
