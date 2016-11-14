@@ -1,5 +1,5 @@
 # SS-Octopus
-> A React starter app!  Complete with React, Redux, Babel, Browserify and Tcomb.  Built on a super simple Hapi server.  Task running by Gulp with a Swagger-mock-api already in place.  Testing with Ava and Nyc
+> A React starter app!  Complete with React, Redux, Babel, Browserify and Tcomb.  Built on a super simple Express server.  Task running by Gulp with a Swagger-mock-api already in place.  Testing with Ava and Nyc
 
 ## Installation
 Clone this repo then run
